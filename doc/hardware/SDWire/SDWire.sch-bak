@@ -2123,10 +2123,38 @@ Wire Wire Line
 	9660 3900 11800 3900
 Wire Wire Line
 	10860 2850 11800 2850
+$Comp
+L SDWire:GND #PWR015
+U 1 1 5CD3DAB0
+P 3800 5700
+F 0 "#PWR015" H 3800 5450 50  0001 C CNN
+F 1 "GND" H 3800 5550 50  0000 C CNN
+F 2 "" H 3800 5700 60  0000 C CNN
+F 3 "" H 3800 5700 60  0000 C CNN
+	1    3800 5700
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
 	4550 5050 4550 5300
 Wire Wire Line
 	4550 5300 4750 5300
+Wire Wire Line
+	3800 5650 3300 5650
+Wire Wire Line
+	3300 5050 3400 5050
+Connection ~ 3800 5650
+Wire Wire Line
+	3800 5650 3800 5700
+Wire Wire Line
+	3400 5150 3300 5150
+Connection ~ 3300 5150
+Wire Wire Line
+	3300 5150 3300 5050
+Wire Wire Line
+	3400 5250 3300 5250
+Connection ~ 3300 5250
+Wire Wire Line
+	3300 5250 3300 5150
 $Comp
 L SDWire:R R16
 U 1 1 5CD42A3D
@@ -2183,35 +2211,20 @@ Wire Wire Line
 Wire Wire Line
 	4250 5050 4550 5050
 Wire Wire Line
+	4450 4950 4450 5150
+Wire Wire Line
 	4450 5200 4750 5200
 $Comp
-L SDWire:GND #PWR015
-U 1 1 5CD3DAB0
-P 3800 5700
-F 0 "#PWR015" H 3800 5450 50  0001 C CNN
-F 1 "GND" H 3800 5550 50  0000 C CNN
-F 2 "" H 3800 5700 60  0000 C CNN
-F 3 "" H 3800 5700 60  0000 C CNN
-	1    3800 5700
-	-1   0    0    -1  
+L Memory_EEPROM:AT24CS02-SSHM U?
+U 1 1 609D7E94
+P 3800 5150
+F 0 "U?" H 3800 5631 50  0000 C CNN
+F 1 "AT24CS02-SSHM" H 3800 5540 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3800 5150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf" H 3800 5150 50  0001 C CNN
+	1    3800 5150
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 5650 3300 5650
-Wire Wire Line
-	3300 5050 3400 5050
-Connection ~ 3800 5650
-Wire Wire Line
-	3800 5650 3800 5700
-Wire Wire Line
-	3400 5150 3300 5150
-Connection ~ 3300 5150
-Wire Wire Line
-	3300 5150 3300 5050
-Wire Wire Line
-	3400 5250 3300 5250
-Connection ~ 3300 5250
-Wire Wire Line
-	3300 5250 3300 5150
 Wire Wire Line
 	3300 5250 3300 5650
 Wire Wire Line
@@ -2229,20 +2242,7 @@ Wire Wire Line
 Connection ~ 4250 5050
 Wire Wire Line
 	4200 5150 4450 5150
-Wire Wire Line
-	4450 4950 4450 5150
+Connection ~ 4450 5150
 Wire Wire Line
 	4450 5150 4450 5200
-Connection ~ 4450 5150
-$Comp
-L Memory_EEPROM:AT24CS02-SSHM U6
-U 1 1 609D7E94
-P 3800 5150
-F 0 "U6" H 3800 5631 50  0000 C CNN
-F 1 "AT24CS02-SSHM" H 3800 5540 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3800 5150 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf" H 3800 5150 50  0001 C CNN
-	1    3800 5150
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

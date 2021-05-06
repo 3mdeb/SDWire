@@ -45,7 +45,7 @@
   )
 
   (setup
-    (last_trace_width 0.2)
+    (last_trace_width 0.4)
     (user_trace_width 0.25)
     (user_trace_width 0.4)
     (trace_clearance 0.19)
@@ -99,7 +99,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../../../../assembly/"))
+      (outputdirectory "SDWire-assembly-v1.4/"))
   )
 
   (net 0 "")
@@ -4570,7 +4570,7 @@
   (segment (start 152.45 122.55) (end 152.45 123.575809) (width 0.2) (layer F.Cu) (net 73))
   (via (at 152.114054 123.911755) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 73))
 
-  (zone (net 1) (net_name GND) (layer In2.Cu) (tstamp 6093BC99) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In2.Cu) (tstamp 5B07B22A) (hatch edge 0.508)
     (connect_pads (clearance 0.2))
     (min_thickness 0.2)
     (fill yes (arc_segments 32) (thermal_gap 0.2) (thermal_bridge_width 0.21))
@@ -4893,7 +4893,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 6093BC96) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5B07B227) (hatch edge 0.508)
     (connect_pads (clearance 0.2))
     (min_thickness 0.2)
     (fill yes (arc_segments 32) (thermal_gap 0.2) (thermal_bridge_width 0.21))
